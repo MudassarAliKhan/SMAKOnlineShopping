@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  ecwesbsite:
+    image: ${DOCKER_REGISTRY-}ecwesbsite
+    build:
+      context: .\ECWesbsite
+      dockerfile: Dockerfile
